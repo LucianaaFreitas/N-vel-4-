@@ -1,19 +1,5 @@
-div {
-  background-color:black;
-  width:60px;
-  height:60px;
-  margin-bottom: 5px;
-}
-section{
-  position: relative;
-  border: 1px solid;
-}
-.position {
-  background-color:red;
+body {
+  --bg-color: #9191d2;
 
-  position: absolute;
-  inset: 0;
-  z-index: 10;
-
-
+  background-color: var(--bg-color);
 }
