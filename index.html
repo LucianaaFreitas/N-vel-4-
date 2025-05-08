@@ -9,18 +9,36 @@
 <body>
   <h1>Aprenda</h1>
 
-  <p>Nesta demostração você irá controlar o posocionamento do elemento em vermelho</p>
+  <style>
+    .container {
+      border: dashed;
 
-  <section>
-    <div></div>
-    <div class="position"></div>
-    <div></div>
-  </section>
+    }
 
-  <br><br>
+    .item{
+      --hue:0;
+      
+       
+      text-align: center;
+      background-color: hsl(var(--hue), 100%, 70%);
+      color: white;
+      width: 20px;
+      font-size: 2rem;
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease;
 
-  para ver o efeito do elemento stick, aplica o position: sticky e arraste a barra de rolagem deste container.
+    }
 
+  </style>
+  <div class="container">
+    <div class="item" style="--hue:0" >1</div>
+    <div class="item" style="--hue:100">2</div>
+    <div class="item" style="--hue: 250" >3</div>
+    <div class="item" style="--hue:320">4</div>
+  </div>
 
 </body>
 </html>
