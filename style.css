@@ -1,8 +1,31 @@
 .container {
-  /* height: 50vh;  */
+  height: 50vh; 
   display: flex;
   /* flex-direction: column; */
   /* justify-content:center; */
   /* align-items: center; */
-  gap: 2rem;
+  /* gap: 2rem; */
+  /* flex-wrap: wrap; */
+  /* flex-flow: wrap; */
+  /* row-gap: 2rem; */
+  /* column-gap: 2rem; */
+
+
+  
+}
+
+.item {
+  flex-basis: 10%;
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  flex: 0 1 100px;
+
+
+
+}
+
+.item:nth-child(6) {
+  /* flex-grow: 2; */
+  /* order: 1; */
+  align-self: center;
 }
